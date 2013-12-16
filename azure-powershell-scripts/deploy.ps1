@@ -1,6 +1,7 @@
 #settings.
 $azureSDK='C:\Program Files (x86)\Microsoft SDKs\Windows Azure\PowerShell\Azure\'
 $subscriptionName='my-description'
+$subscriptionSettingFileName='credentials.publishsettings'
 $slotName='Staging'
 $locationName='East US'
 $storageAccountName='test-storage';
@@ -13,9 +14,9 @@ $cscfgName='\ServiceConfiguration.Cloud.cscfg'
 Push-Location $azureSDK
 Import-Module .\Azure.psd1
 Pop-Location
+Import-AzurePublishSettingsFile $subscriptionSettingFileName
 
 #subscription setting
-Import-AzurePublishSettingsFile $subscriptionSettingFileName
 Set-AzureSubscription $subscriptionName -CurrentStorageAccount $storageAccountName
 if ($? -ne $true) { exit 1 }
 
