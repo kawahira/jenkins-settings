@@ -1,10 +1,10 @@
 #settings
 $azureSDK='C:\Program Files (x86)\Microsoft SDKs\Windows Azure\PowerShell\Azure\'
-$subscriptionName='my-description'
+$subscriptionName='mysubscription'
 $subscriptionSettingFileName='credentials.publishsettings'
 $locationName='East US'
-$serviceName='test-service'
-$storageAccountName='test-storage';
+$serviceName='testdaservice'
+$storageAccountName='testdastorage'
 
 #power shell setting
 Push-Location $azureSDK

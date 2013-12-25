@@ -1,12 +1,12 @@
 #settings.
 $azureSDK='C:\Program Files (x86)\Microsoft SDKs\Windows Azure\PowerShell\Azure\'
-$subscriptionName='my-description'
+$subscriptionName=''mysubscription'
 $subscriptionSettingFileName='credentials.publishsettings'
-$slotName='Staging'
 $locationName='East US'
-$storageAccountName='test-storage';
-$serviceName='test-service'
-$appPublishFolder='test-service\bin\Release\app.publish'
+$serviceName='testdaservice'
+$storageAccountName='testdastorage'
+$slotName='Staging'
+$appPublishFolder='release'
 $cspkgName= 'test.cspkg'
 $cscfgName='\ServiceConfiguration.Cloud.cscfg'
 

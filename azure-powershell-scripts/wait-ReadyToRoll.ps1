@@ -1,8 +1,8 @@
 #settings
 $azureSDK='C:\Program Files (x86)\Microsoft SDKs\Windows Azure\PowerShell\Azure\'
-$subscriptionSettingFileName='credentials.publishsettings'
+$subscriptionName='mysubscription'
 $slotName='Staging'
-$serviceName='test-service'
+$serviceName='testdaservice'
 
 #power shell setting
 Push-Location $azureSDK
